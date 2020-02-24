@@ -1,0 +1,20 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model SmartCargoTransportation.Areas.Admin.ViewModels.ChangeRoleViewModel
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Change role for user @Model.UserEmail</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" name="userId" value="@Model.UserId" />
+    @foreach (IdentityRole role in Model.AllRoles)
+    {
+        <div class="form-check">
+            <input type="checkbox" name="roles" class="form-check-input" id="@role.Name" value="@role.Name" @(Model.UserRoles.Contains(role.Name) ? "checked" : "") />
+            <label class="form-check-label" for="@role.Name">@role.Name</label>
+        </div>
+    }
+
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>

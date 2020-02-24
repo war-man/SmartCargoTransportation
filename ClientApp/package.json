@@ -1,0 +1,66 @@
+{
+  "name": "smartcargotransportation",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fullcalendar/core": "^4.3.1",
+    "@fullcalendar/daygrid": "^4.3.0",
+    "@fullcalendar/react": "^4.3.0",
+    "@fullcalendar/interaction": "^4.3.0",
+    "@fullcalendar/bootstrap": "^4.3.0",
+    "axios": "^0.19.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "merge": "^1.2.1",
+    "node-sass": "^4.13.0",
+    "oidc-client": "^1.9.0",
+    "mdbreact": "./mdbreact-4.22.1.tgz",
+    "calendar": "./mdb-full-calendar-4.16.0.tgz",
+    "mdb-react-table-editor": "./mdb-react-table-editor-4.16.0.tgz",
+    "mdb-react-fileupload": "./mdb-react-fileupload-4.16.0.tgz",
+    "react": "^16.12.0",
+    "react-bootstrap": "^1.0.0-beta.16",
+    "react-dom": "^16.7.0",
+    "react-modal": "^3.10.1",
+    "react-router-dom": "^5.0.1",
+    "react-router-bootstrap": "^0.24.4",
+    "react-moment": "^0.9.6",
+    "react-file-reader": "^1.1.4",
+    "moment": "^2.24.0",
+    "react-scripts": "^3.1.0",
+    "reactstrap": "^8.0.0"
+  },
+  "devDependencies": {
+    "ajv": "^6.10.0",
+    "cross-env": "^6.0.0",
+    "renamer": "^1.0.0",
+    "rimraf": "^2.7.1",
+    "eslint": "^6.1.0",
+    "eslint-config-react-app": "^5.0.0",
+    "eslint-plugin-flowtype": "3.13.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.15.0",
+    "typescript": "^3.6.3"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "scripts": {
+    "start": "rimraf ./build && react-scripts start",
+    "build": "react-scripts build",
+    "test": "cross-env CI=true react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "lint": "eslint ./src/"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
